@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lolo v5 RSS Feed Aggregator</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Lolo v5 RSS Feed Aggregator</h1>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Manage Feeds</h2>
+            <input type="text" id="feed-url" placeholder="Enter RSS feed URL">
+            <button id="add-feed">Add Feed</button>
+            <ul id="feed-list"></ul>
+        </section>
+        <section>
+            <h2>Articles</h2>
+            <label for="category-filter">Filter by Category:</label>
+            <select id="category-filter">
+                <option value="all">All</option>
+            </select>
+            <div id="articles"></div>
+        </section>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="modal-body"></div>
+        </div>
+      </div>
+      
+    <script src="scripts/main.js"></script>
+</body>
+</html>
